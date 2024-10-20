@@ -1,0 +1,42 @@
+/* Sidebar.css */
+.sidebar {
+    width: 60px;
+    height: 100vh;
+    background-color: #343a40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidebar.open {
+    width: 200px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar li:hover {
+    background-color: #495057;
+  }
+  
+  .link-text {
+    margin-left: 10px;
+    display: none;
+  }
+  
+  .sidebar.open .link-text {
+    display: inline;
+  }
+  
